@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #0077cc;         /* Frisse blauw */
+  --background-color: #f9f9f9;      /* Lichtgrijze achtergrond */
+  --text-color: #222222;            /* Donkere tekst voor leesbaarheid */
+  --accent-color: #e0e0e0;          /* Lichtgrijze accenten */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+#hero {
+  background: linear-gradient(to right, #e8f4ff, #ffffff);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid var(--accent-color);
+}
